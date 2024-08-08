@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>計算復習アプリ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=UD+Digi+Kyokasho+N-R&display=swap" rel="stylesheet">
+</head>
+
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <div id="menu">
+                <button id="multiplication_table">かけ算(九九)</button>
+                <button id="division_table">割り算(九九)</button>
+                <button id="multiplication_2digit_1digit">2桁×1桁の掛け算</button>
+                <button id="multiplication_3digit_2digit">3桁×2桁の掛け算</button>
+                <button id="division_2digit_1digit">2桁÷1桁の割り算</button>
+                <button id="division_3digit_1digit">3桁÷1桁の割り算</button>
+            </div>
+        </div>
+        <div class="right-column">
+    	   <div id="question-container" style="display: block;">
+     		   <h2 id="question" style="font-size: 60px;"></h2>
+       		   <input type="number" id="user_answer" placeholder="答えを入力" style="width: 300px; height: 50px; font-size: 36px;">
+        	   <button id="check_answer">答え合わせ</button>
+        	   <p id="result" style="font-size: 60px; color: red;"></p>
+
+   	   </div>
+    	<div id="quiz-result" style="display: none;">
+          <p id="score" style="font-size: 60px;">正解数: 0</p>
+          <button id="restart-quiz">クイズをもう一度する</button>
+          <p class="congrats-message" style="font-size: 80px;"></p>
+        </div>
+    </div>
+  </div>
+
+    <script src="script.js"></script>
+    <script>
+        // イベントリスナーの設定は省略
+    </script>
+</body>
+</html>
