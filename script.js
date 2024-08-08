@@ -143,19 +143,26 @@ division_table() {
 
     currentQuestion = { num1, num2, answer };
 },
-    // 2桁÷1桁の割り算
+    const quizData = {
+    // 2桁÷1桁の割り算 (割り切れる)
     division_2digit_1digit() {
-        let num1 = Math.floor(Math.random() * 90) + 10; // 10 ~ 99
-        let num2 = Math.floor(Math.random() * 9) + 1; // 1 ~ 9
-        let answer = Math.floor(num1 / num2);
+        let num1, num2, answer;
+        do {
+            num1 = Math.floor(Math.random() * 90) + 10; // 10 ~ 99
+            num2 = Math.floor(Math.random() * 9) + 1; // 1 ~ 9
+            answer = num1 / num2;
+        } while (!Number.isInteger(answer));
         currentQuestion = { num1, num2, answer };
     },
 
-    // 3桁÷1桁の割り算
+    // 3桁÷1桁の割り算 (割り切れる)
     division_3digit_1digit() {
-        let num1 = Math.floor(Math.random() * 900) + 100; // 100 ~ 999
-        let num2 = Math.floor(Math.random() * 9) + 1; // 1 ~ 9
-        let answer = Math.floor(num1 / num2);
+        let num1, num2, answer;
+        do {
+            num1 = Math.floor(Math.random() * 900) + 100; // 100 ~ 999
+            num2 = Math.floor(Math.random() * 9) + 1; // 1 ~ 9
+            answer = num1 / num2;
+        } while (!Number.isInteger(answer));
         currentQuestion = { num1, num2, answer };
     },
 };
