@@ -1,0 +1,183 @@
+body {
+    font-family: 'UD Digi Kyokasho N-R', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* 縦方向に配置 */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* 縦方向に配置 */
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#menu {
+    background-color: #f1f1f1;
+    padding: 1.25rem;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.625rem;
+    width: 100%;
+}
+
+#menu button {
+    display: block;
+    padding: 0.625rem 1.25rem;
+    font-size: 0.875em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+#menu button:hover {
+    background-color: #45a049;
+}
+
+#quiz {
+    flex-grow: 1; /* 残りの領域を占める */
+    display: none;
+    width: 100%;
+    max-width: 37.5rem;
+    padding: 1.25rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+#quiz h2 {
+    font-size: 1.5em;
+    margin-bottom: 1.25rem;
+}
+
+#quiz p {
+    font-size: 1.125em;
+    margin-bottom: 0.625rem;
+    white-space: nowrap; /* 改行を禁止 */
+    overflow: hidden; /* 超過分を非表示 */
+    text-overflow: ellipsis; /* 超過分は省略記号で表示 */
+}
+
+#quiz input {
+    font-size: 1.125em;
+    padding: 0.3125rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#quiz button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.625rem 1.25rem;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#quiz button:hover {
+    background-color: #45a049;
+}
+
+#quiz #result {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ff0000;
+    margin-top: 1.25rem;
+    animation: pulse 1s ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.congrats-message {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ff0000;
+    margin-top: 20px;
+    animation: pulse 1s ease-in-out;
+}
+@media (max-width: 767px) {
+  /* スマートフォン向けのスタイル */
+  body {
+    flex-direction: column;
+  }
+
+  .container {
+    width: 100%;
+    height: auto;
+  }
+
+  #menu {
+    order: 1; /* メニューを上に配置 */
+    background-color: #f1f1f1;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5rem;
+  }
+
+  #menu button {
+    font-size: 0.9em;
+    padding: 0.5rem 1rem;
+  }
+
+  #quiz {
+    order: 2; /* クイズを下に配置 */
+    flex-grow: 1;
+    max-width: none;
+    padding: 1rem;
+  }
+
+  #quiz h2 {
+    font-size: 1.25em;
+    margin-bottom: 1rem;
+  }
+
+  #quiz p {
+    font-size: 1em;
+    margin-bottom: 0.5rem;
+  }
+
+  #quiz input {
+    font-size: 1em;
+    padding: 0.25rem;
+    margin-bottom: 1rem;
+  }
+
+  #quiz button {
+    font-size: 0.9em;
+    padding: 0.5rem 1rem;
+  }
+
+  .question-container {
+    font-size: 1.1em;
+  }
+}
