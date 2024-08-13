@@ -143,7 +143,7 @@ division_table() {
 
     currentQuestion = { num1, num2, answer };
 },
-    const quizData = {
+    
     // 2桁÷1桁の割り算 (割り切れる)
     division_2digit_1digit() {
         let num1, num2, answer;
