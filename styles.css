@@ -52,6 +52,7 @@ body {
 
 #quiz {
     flex-grow: 1; /* 残りの領域を占める */
+    display: none;
     width: 100%;
     max-width: 37.5rem;
     padding: 1.25rem;
