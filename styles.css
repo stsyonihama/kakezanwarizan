@@ -4,51 +4,6 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f1f1f1;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    height: 80%;
-    background-color: white;
-    box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-#menu {
-    background-color: #f1f1f1;
-    padding: 1.25rem;
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0.625rem;
-    width: 100%;
-}
-
-#quiz {
-    flex-grow: 1;
-    display: none;
-    width: 100%;
-    max-width: 37.5rem;
-    padding: 1.25rem;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.1);
-    overflow-y: auto;
-}
-body {
-    font-family: 'UD Digi Kyokasho N-R', sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    display: flex;
     flex-direction: column; /* 縦方向に配置 */
     justify-content: center;
     align-items: center;
