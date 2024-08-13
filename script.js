@@ -26,7 +26,7 @@ function showNextQuestion() {
                 operatorText = '÷'
                 break;
             default:
-                operatorText = '+';
+                operatorText = '÷';
                 break;
         }
         document.getElementById('question').textContent = `${currentQuestion.num1} ${operatorText} ${currentQuestion.num2} = ?`;
