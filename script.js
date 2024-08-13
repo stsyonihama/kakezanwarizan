@@ -149,7 +149,7 @@ division_table() {
         let num1, num2, answer;
         do {
             num1 = Math.floor(Math.random() * 90) + 10; // 10 ~ 99
-            num2 = Math.floor(Math.random() * 9) + 1; // 1 ~ 9
+            num2 = Math.floor(Math.random() * 8) + 2; // 2 ~ 9
             answer = num1 / num2;
         } while (!Number.isInteger(answer));
         currentQuestion = { num1, num2, answer };
@@ -160,7 +160,7 @@ division_table() {
         let num1, num2, answer;
         do {
             num1 = Math.floor(Math.random() * 900) + 100; // 100 ~ 999
-            num2 = Math.floor(Math.random() * 9) + 1; // 1 ~ 9
+            num2 = Math.floor(Math.random() * 8) + 2; // 1 ~ 9
             answer = num1 / num2;
         } while (!Number.isInteger(answer));
         currentQuestion = { num1, num2, answer };
