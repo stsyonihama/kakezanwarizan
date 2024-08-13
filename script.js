@@ -23,7 +23,7 @@ function showNextQuestion() {
             case 'multiplication_table':
             case 'multiplication_2digit_1digit':
             case 'multiplication_3digit_2digit':
-                operatorText = '×'
+                operatorText = '÷'
                 break;
             default:
                 operatorText = '+';
