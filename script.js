@@ -15,16 +15,15 @@ function showNextQuestion() {
         quizzes[currentQuiz](); // 問題を生成
         let operatorText = '';
         switch (currentQuiz) {
-            case 'addition_10':
-            case 'addition_20_carry':
-            case 'addition_over_20':
-            case 'addition_2digit_1digit':
-            case 'addition_3digit_2digit':
-                operatorText = '+';
+            case 'multiplication_table':
+            case 'multiplication_2digit_1digit':
+            case 'multiplication_3digit_2digit':
+                operatorText = '×'
                 break;
-            case 'subtraction_10':
-            case 'subtraction_20_borrow':
-                operatorText = '-';
+            case 'multiplication_table':
+            case 'multiplication_2digit_1digit':
+            case 'multiplication_3digit_2digit':
+                operatorText = '×'
                 break;
             default:
                 operatorText = '+';
