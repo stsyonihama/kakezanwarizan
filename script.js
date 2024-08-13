@@ -5,6 +5,7 @@ let correctAnswers = 0;
 
 function startQuiz(quizType) {
     currentQuiz = quizType;
+    currentQuestion = {}; // 初期化を追加
     showNextQuestion();
     document.getElementById('quiz').style.display = 'block';
 }
