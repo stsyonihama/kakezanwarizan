@@ -5,7 +5,6 @@ let correctAnswers = 0;
 
 function startQuiz(quizType) {
     currentQuiz = quizType;
-    currentQuestion = {}; // 初期化を追加
     showNextQuestion();
     document.getElementById('quiz').style.display = 'block';
 }
@@ -16,15 +15,16 @@ function showNextQuestion() {
         quizzes[currentQuiz](); // 問題を生成
         let operatorText = '';
         switch (currentQuiz) {
-            case 'multiplication_table':
-            case 'multiplication_2digit_1digit':
-            case 'multiplication_3digit_2digit':
-                operatorText = '×';
+            case 'addition_10':
+            case 'addition_20_carry':
+            case 'addition_over_20':
+            case 'addition_2digit_1digit':
+            case 'addition_3digit_2digit':
+                operatorText = '+';
                 break;
-            case 'division_table':
-            case 'division_2digit_1digit':
-            case 'division_3digit_1digit':
-                operatorText = '÷';
+            case 'subtraction_10':
+            case 'subtraction_20_borrow':
+                operatorText = '-';
                 break;
             default:
                 operatorText = '+';
