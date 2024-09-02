@@ -192,6 +192,6 @@ document.getElementById('division_3digit_1digit').addEventListener('click', () =
     startQuiz('division_3digit_1digit');
 });
 
-document.getElementById('checkAnswer').addEventListener('click', () => {
+document.getElementById('check_answer').addEventListener('click', () => {
     checkAnswer();
 });
