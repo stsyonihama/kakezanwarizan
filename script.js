@@ -55,7 +55,7 @@ function checkAnswer() {
         correctAnswers++;
         document.getElementById('score').textContent = `正解数: ${correctAnswers}`;
     } else {
-        document.getElementById('result').textContent = '不正解...';
+        document.getElementById('result').textContent = 'おしい...';
     }
 
     if (questionNumber === 3) {
